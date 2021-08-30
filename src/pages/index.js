@@ -1,5 +1,5 @@
 import React from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 
 const IndexPage = ({ data }) => {
   const posts = data.allMdx.nodes;
@@ -10,7 +10,7 @@ const IndexPage = ({ data }) => {
         {posts.map((post) => {
           return (
             <li key={post.fields.slug}>
-              <a href={post.fields.slug}>{post.fields.slug}</a>
+              <Link to={post.fields.slug}>{post.fields.slug}</Link>
             </li>
           );
         })}
