@@ -1,4 +1,4 @@
-# Gatsby Starter MDX Basic
+# Gatsby Starter MDX Minimal
 
 This starter build MDX support for reproduction mdx issues.
 
